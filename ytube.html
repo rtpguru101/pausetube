@@ -44,8 +44,9 @@
       }
       function stopVideo() {
         player.pauseVideo();
-        setTimeout(function(){ alert("Hello"); }, 3000);
-        player.seekTo(15);
+        setTimeout(playVid, 10000);
+      }
+      function playVid() {
         player.playVideo();
       }
     </script>
