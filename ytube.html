@@ -43,7 +43,10 @@
         }
       }
       function stopVideo() {
-        player.stopVideo();
+        player.pauseVideo();
+        setTimeout(function(){ alert("Hello"); }, 3000);
+        player.seekTo(15);
+        player.playVideo();
       }
     </script>
   </body>
